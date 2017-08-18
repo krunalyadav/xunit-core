@@ -1,10 +1,11 @@
-﻿using System;
+﻿using CreditCards.Core.Interfaces;
+using System;
 using System.Globalization;
 using System.Linq;
 
 namespace CreditCards.Core.Model
 {
-    public class FrequentFlyerNumberValidator
+    public class FrequentFlyerNumberValidator : IFrequentFlyerNumberValidator
     {
         readonly char[] _validSchemeIdentifiers = { 'A', 'Q', 'Y' };
         const int ExpectedTotalLength = 8;
